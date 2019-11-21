@@ -102,9 +102,6 @@ Write-Output "Downloading Parsec, Google Chrome, DirectX June 2010 Redist, DevCo
 Write-Host "Downloading DirectX" -NoNewline
 (New-Object System.Net.WebClient).DownloadFile("https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe", "C:\ParsecTemp\Apps\directx_Jun2010_redist.exe") 
 Write-host "`r - Success!"
-Write-Host "Downloading Devcon" -NoNewline
-(New-Object System.Net.WebClient).DownloadFile("https://s3.amazonaws.com/parsec-files-ami-setup/Devcon/devcon.exe", "C:\ParsecTemp\Devcon\devcon.exe")
-Write-host "`r - Success!"
 Write-Host "Downloading Parsec" -NoNewline
 (New-Object System.Net.WebClient).DownloadFile("https://builds.parsecgaming.com/package/parsec-windows.exe", "C:\ParsecTemp\Apps\parsec-windows.exe")
 Write-host "`r - Success!"
